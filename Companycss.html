@@ -3,7 +3,111 @@
 <head>
     <style>
 
+        body {
+            background-color: #f8f1e4;
+            margin: 0;
+            font-family: Montserrat, sans-serif;
+            color: rgb(66, 60, 60);
+            position: relative;
+            font-size: 18px;
+        }
+
+        .background-line {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 85px;
+            background-color: rgb(74, 12, 12);;
+            z-index: 1;
+        }
+
+        .mainname{
+            position: fixed;
+            top: 25px;
+            left: 75px;
+            font-size: 40px;
+            font-variant: all-small-caps;
+            color: #f8f1e4;
+            z-index: 2;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .link-container {
+            height: 58px;
+            top: 45px;
+            color: #f8f1e4;
+            font-size: 25px;
+            font-weight: 400;
+            font-variant: all-small-caps;
+            font-family: 'Roboto Condensed', sans-serif;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            z-index: 2;
+        }
+
+        .acomp {
+            width: 187px;
+            left: 1000px;
+        }
+
+        .assort {
+            width: 178px;
+            left: 1125px;
+        }
+
+        .contact{
+            width: 166px;
+            left: 1300px;
+        }
+
+        .link-container a {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            height: 100%;
+        }
+
+        .image {
+            top: 85px;
+            left: 0;
+            height: 100%;
+            background-size: cover;
+            width: 325px;
+            height: 1000px;
+            background: url('Vine.jpg');
+            position: fixed;
+            background-attachment: fixed;
+            z-index: 0;
+        }
+
+        .usualh{
+            font-size: 32px;
+            font-variant: all-small-caps;
+            position: absolute;
+        }
+
+        .content{
+            font-size: 18px;
+            position: absolute;
+        }
+
+        #Table{
+            color: black;
+        }
+
+        .title {
+            top: 175px;
+            left: 650px;
+            font-size: 35px;
+            font-variant: all-small-caps;
+            position: absolute;
+        }
+
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@375&family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Company"   content="Загальна інформація про компанію">
@@ -11,5 +115,72 @@
 </head>
 
 <body>
-    
+    <div class="background-line"></div>
+    <div class="mainname">Творці смаку</div>
+    <div class="link-container acomp"><a href="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Authorcss.html">Автор</a></div>
+    <div class="link-container assort"><a href="https://github.com/KaliuzhnaMariia">Асортимент</a></div>
+    <div class="link-container contact"><a href="https://github.com/KaliuzhnaMariia">Контакти</a></div>
+    <div class="image"></div>
+
+    <div class= "title">Розкрийте насолоду в кожній краплі</div>
+    <div class= "usualh" style="top: 425px; left: 400px;">Про компанію</div>
+    <div class="content" style="top: 465px; left: 400px"> 
+        <p>
+            Компанія "Творці Смаку" - це відома в усьому світі компанія, що спеціалізується на створенні та постачанні вишуканих алкогольних 
+            напоїв та смакових продуктів. Ми присвячені найвищим стандартам смаку і якості, і наша місія полягає в тому, щоб допомогти клієнтам 
+            відкрити світ смакових можливостей. У великому каталозі представлені алкогольні напої провідних та вітчизняних виробників сертифікованої 
+            якості. У нас є все, що порадує вас і підніме настрій: класична горілка, молоді, ігристі та марочні вина, витримані віскі та коньяки, 
+            ексклюзивні міцні напої різної фортеці з усього світу. 
+        </p>
+    </div>
+
+    <div class= "usualh" style="top: 725px; left: 400px;">Місія</div>
+    <div class="content" style="top: 765px; left: 400px"> 
+        <p>
+            Місія "Творців Смаку" - робити світ смаку доступним для всіх і сприяти розширенню смакових горизонтів. Ми віримо, що смак - це мистецтво, 
+            і ми працюємо, щоб надати нашим клієнтам найкращі інструменти для того, щоб вони могли творити смакові шедеври та насолоджуватися ними.
+            </p>
+    </div>
+
+    <div class= "usualh" style="top: 925px; left: 400px;">Чому довіряють саме нам</div>
+    <div class="content" style="top: 965px; left: 400px"> 
+        <p>Цей розділ є важливим компонентом нашого підходу до співпраці з клієнтами. Ось декілька ключових причин, чому нас обирають:</p>
+        <ol style="font-size: 16px; border:2px solid rgb(74, 12, 12);">
+            <li><i id = "Table">Вишуканий Відбір: </i>Ми обираємо лише найкращі алкогольні напої та смакові продукти, які відповідають найвищим 
+                стандартам смаку і якості. Кожен продукт у нашому асортименті проходить суворий відбір, щоб впевнитися, що він відповідає нашим 
+                вимогам.</li>
+            <li><i id = "Table">Експертність: </i>Наша команда складається з досвідчених експертів, які ретельно вивчили алкогольні напої і мають 
+                глибокі знання про їхні смаки та особливості.</li>
+            <li><i id = "Table">Широкий Вибір: </i>Ми пропонуємо різноманітність продуктів від вин і спиртних напоїв до коктейлів і смакових вражень, 
+                щоб задовольнити потреби різних клієнтів.</li>
+            <li><i id = "Table">Дегустаційні Події: </i>Наші дегустаційні заходи та майстер-класи дозволяють клієнтам ознайомитися зі смаками та 
+                ароматами продуктів перед покупкою.</li>
+            <li><i id = "Table">Відмінний Сервіс: </i>Ми прагнемо забезпечити відмінний клієнтський сервіс, надаючи консультації та рекомендації для 
+                того, щоб кожен клієнт знайшов ідеальний напій.</li>
+            <li><i id = "Table">Зобов'язання до Якості: </i>Ми пишаємося нашим зобов'язанням до якості і інновацій, завжди шукаючи нові способи 
+                покращення наших продуктів та послуг.</li>
+            <li><i id = "Table">Репутація: </i>Наша компанія має стабільну репутацію надійного постачальника вишуканих алкогольних напоїв та смакових 
+                продуктів.</li>
+        </ol>
+        <p>Ми віримо, що ці фактори роблять нас надійними партнерами для наших клієнтів, і ми завжди готові виправдовувати їх довіру, надаючи найкращі 
+            продукти і обслуговування.
+        </p>
+    </div>
+
+    <div class= "usualh" style="top: 1450px; left: 400px;">Оригінальність</div>
+    <div class="content" style="top: 1490px; left: 400px"> 
+        <p>Ми працюємо безпосередньо з виробниками алкоголю, які мають бездоганну репутацію, відповідні сертифікати та документи. Завдяки цьому ми 
+            впевнені як алкогольні напої.
+        </p>
+    </div>
+
+    <div class= "usualh" style="top: 1600px; left: 400px;">Асортимент</div>
+    <div class="content" style="top: 1640px; left: 400px"> 
+        <p>В цьому розділі ви можете знайти послилання на сторінку <a style="color: rgb(74, 12, 12);" href="file:///C:/Users/User/github-classroom/VLazorykOOP/weblab1-KaliuzhnaMariia/Author.html"> 
+            автора веб-сторінки</a> та на наявний зараз<a style="color: rgb(74, 12, 12);" href="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Assortiment.html"> 
+            асортимент алкогольних напоїв</a>. Наші консультанти з радістю допоможуть у виборі напою, якщо ви маєте сумніви щодо нього. Сподіваємося, 
+            вам сподобається наш сервіс. Гарного дня!
+        </p>
+    </div>
+
 </body>
