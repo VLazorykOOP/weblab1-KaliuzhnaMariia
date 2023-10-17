@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <style>
+        #MyHeader{
+            background-color:rgb(197, 113, 125);
+            color: black;
+            text-align:center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author"   content="Калюжна Марія Валеріївна">
+    <title>Сторінка автору Web-сайту </title>
+</head>
+<body>
+    <h1 id="MyHeader">Про автора сторінки</h1>
+    <h1>Це заголовок</h1>
+    <a href="https://github.com/KaliuzhnaMariia">Адреса мого репозиторію GitHub</a>
+</body>
+</html>
