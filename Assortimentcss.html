@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <style>
+        body {
+            background-color: #f8f1e4;
+            margin: 0;
+            font-family: Montserrat, sans-serif;
+            color: rgb(66, 60, 60);
+            position: relative;
+            font-size: 18px;
+        }
+
+        .background-line {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 85px;
+            background-color: rgb(74, 12, 12);
+            z-index: 1;
+        }
+
+        .mainname{
+            position: fixed;
+            top: 25px;
+            left: 75px;
+            font-size: 40px;
+            font-variant: all-small-caps;
+            color: #f8f1e4;
+            z-index: 2;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .link-container {
+            height: 58px;
+            top: 45px;
+            color: #f8f1e4;
+            font-size: 25px;
+            font-weight: 400;
+            font-variant: all-small-caps;
+            font-family: 'Roboto Condensed', sans-serif;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            z-index: 2;
+        }
+
+        .assort {
+            width: 187px;
+            left: 975px;
+        }
+
+        .acomp {
+            width: 200px;
+            left: 1085px;
+        }
+
+        .contact{
+            width: 166px;
+            left: 1325px;
+        }
+
+        .link-container a {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            height: 100%;
+        }
+
+        .title {
+            top: 125px;
+            left: 475px;
+            font-size: 35px;
+            font-variant: all-small-caps;
+            position: absolute;
+        }
+
+        .image {
+            height: 1000px;
+            background-size: cover;
+            width: 325px;
+            background: url('Vine.jpg');
+            position: fixed;
+            background-attachment: fixed;
+            z-index: 0;
+        }
+
+
+        .image-container {
+            width: 1495px;
+            height: 275px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+        }
+
+        .image-container button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: auto;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .image-container img {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            padding: 10px;
+            border: 2px solid rgb(74, 12, 12);
+        }
+
+        .image-wrapper {
+            position: relative;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: -25px;
+            width: 100%;
+            background-color: #f8f1e4;
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        .caption:hover {
+            transform: scale(1.3);
+            color: #520505;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .usualh{
+            font-size: 32px;
+            font-variant: all-small-caps;
+            position: absolute;
+        }
+
+        .content{
+            font-size: 18px;
+            position: absolute;
+        }
+
+        .usualh{
+            font-size: 32px;
+            font-variant: all-small-caps;
+            position: absolute;
+        }
+
+        .content{
+            font-size: 18px;
+            position: absolute;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@375&family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Assortiment"   content="Асортимент продуктів">
+    <title>Асортимент</title>
+</head>
+<body>
+    <div class="background-line"></div>
+    <div class="mainname">Творці смаку</div>
+    <div class="link-container assort"><a href="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Authorcss.html">Автор</a></div>
+    <div class="link-container acomp"><a href="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Companycss.html">Алкогольна компанія</a></div>
+    <div class="link-container contact"><a href="https://github.com/KaliuzhnaMariia">Контакти</a></div>
+    <div class= "title"><i>Розкрийте насолоду в кожній краплі</i></div>
+    <div style="position: absolute; margin-top: 195px; margin-left: 662px; font-size: 35px; font-variant: all-small-caps;">Асортимент</div>
+
+    <div class="image-container" style="margin-top: 250px; margin-left: 20px;">
+        <button><div class="image-wrapper">
+                <img src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Whiskeyass.jpg" alt="Зображення віскі">
+                <div class="caption">Віскі</div>
+        </div></button>
+
+        <button><div class="image-wrapper">
+            <img src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Vodkaass.jpg" alt="Зображення горілки">
+            <div class="caption">Горілка</div>
+        </div></button>
+
+        <button><div class="image-wrapper">
+            <img src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Vine.jpg" alt="Зображення вина">
+            <div class="caption">Вино</div>
+        </div></button>
+
+        <button><div class="image-wrapper">
+            <img src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Vermutass.jpg" alt="Зображення вермуту">
+            <div class="caption">Вермут</div>
+        </div></button>
+    </div>
+
+    <div class="image-container" style="margin-top: 700px; margin-left: 20px;">
+        <button><div class="image-wrapper">
+                <img src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Tequilaass.jpg" alt="Зображення текіли">
+                <div class="caption">Текіла та мескаль</div>
+        </div></button>
+        <button><div class="image-wrapper">
+            <img src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Rumass.jpg" alt="Зображення рому">
+            <div class="caption">Ром</div>
+        </div></button>
+
+        <button><div class="image-wrapper">
+            <img src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Liqueurass.jpg" alt="Зображення лікера">
+            <div class="caption">Лікери та аперативи</div>
+        </div></button>
+
+        <button><div class="image-wrapper">
+            <img src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Champagneass.jpg" alt="Зображення шампанського">
+            <div class="caption">Шампанське та ігристе вино</div>
+        </div></button>
+    </div>
+
+    <div class="image-container" style="margin-top: 1150px; margin-left: 20px;">
+        <button><div class="image-wrapper">
+                <img src=C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Ciderass.jpg alt="Зображення сидру">
+                <div class="caption">Сидр</div>
+        </div></button>
+        <button><div class="image-wrapper">
+            <img src=C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Beerass.jpg alt="Зображення пива">
+            <div class="caption">Пиво</div>
+        </div></button>
+
+        <button><div class="image-wrapper">
+            <img src=C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Sakeass.jpg alt="Зображення саке">
+            <div class="caption">Саке</div>
+        </div></button>
+
+        <button><div class="image-wrapper">
+            <img src=C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Cognacass.jpg alt="Зображення коньяку">
+            <div class="caption">Коньяк та бренді</div>
+        </div></button>
+    </div>
+
+    <div class= "usualh" style="top: 1600px; left: 140px;">Консультація</div>
+    <div class="content" style="top: 1640px; left: 115px"> 
+        <p>
+            Якщо у вас виникли питання щодо алкогольних напоїв, ви сміливо можете звернутися до наших консультантів. Вони з радістю підкажуть вам найкращий напій до вашого
+            смаку, нагоди та вподобань за номером +380(96)-381-41-06. <i style="color:black">Графік роботи наших консультантів: </i>
+        </p>
+        <ul style="list-style-type:none; margin-left: 35px; color: black;">
+            <li><i>Пн-Пт:</i> 9:00 - 19:00</li>
+            <li><i>Сб:</i> 10:00 - 19:00</li>
+            <li><i>Нд:</i> вихідний</li>
+        </ul>
+    </div>
+
+    <div class= "usualh" style="top: 1820px; left: 140px;">Наявність</div>
+    <div class="content" style="top: 1860px; left: 115px"> 
+        <p>
+            Асортимент постійно оновлюється, тому усі алкогольні напої, що знаходяться у списку точно є в наявності. Якщо ви не знайшли бажаних напоїв, можна замовити
+            їх через наших консультантів. Коли ваше замовлення буде готове (найближчим часом) наші консультанти зв'яжуться з вами і повідомлять про це.
+        </p>
+    </div>
+
+    <div class= "usualh" style="top: 1970px; left: 140px;">Оплата</div>
+    <div class="content" style="top: 2010px; left: 115px"> 
+        <ol style="margin-left: 35px; color: black;">
+            <li><i>Попередня оплата</i> (оплачуйте товари на карту ПриватБанк 100% від вартості замовлення)</li>
+            <li><i>Грошовий переказ або оплата при отриманні</i> (ви оплачуєте замовлення  при отриманні у відділенні пошти. Зверніть увагу, відправка грошей назад платна — 
+                вартість доставки  + 2% від суми переказу)</li>
+        </ol>
+    </div>
+
+    <div class= "usualh" style="top: 2120px; left: 140px;">Доставка</div>
+    <div class="content" style="top: 2160px; left: 115px"> 
+        <ol style="margin-left: 35px; color: black;">
+            <li><i>Нова Пошта</i> (в будь-яку точку України за тарифами Нової Пошти)</li>
+            <li><i>Укрпошта</i> (в будь-яку точку України за тарифами Укрпошти)</li>
+        </ol>
+    </div>
+
+    <div class= "usualh" style="top: 2260px; left: 140px;">Зв'язок з нами</div>
+    <div class="content" style="top: 2300px; left: 115px"> 
+        <p>
+            <ol style="margin-left: 35px; color: black;">
+                <li><i>Телефон:</i> Наша гаряча лінія завжди відкрита для вашого дзвінка. Ви можете зв'язатися з нами за номером <em>+380(96)-572-81-02</em> і наші 
+                    представники готові надати вам всю необхідну допомогу.
+                </li>
+                <li><i>Електронна пошта:</i> Якщо вам зручніше обмінюватися електронними листами, ви можете написати нам на адресу <em>info@tvortsismaku.com</em>. Ми 
+                    відповімо вам якнайшвидше з необхідною інформацією.</li>
+                <li><i>Соціальні мережі:</i> Ми активні в соціальних мережах, таких як Facebook, Instagram і Twitter. Ви можете знайти нас та зв'язатися з нами через ці платформи.</li>
+                <li><i>Фізична адреса:</i> Якщо ви бажаєте особисто завітати до нас або відправити листа, наша фізична адреса <em>м. Київ, вул. Смакова, 123</em> завжди відкрита для вас.</li>
+            </ol> 
+        </p>
+    </div>
+</body>
