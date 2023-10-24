@@ -7,52 +7,27 @@
             margin: 0;
             font-family: Montserrat, sans-serif;
             color: rgba(12, 11, 11, 0.76);
-            position: relative;
         }
 
-        .background-line {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
+        div.background-line {
+            position: sticky;
+            width: auto;
+            top: 0px;
             height: 75px;
             background-color: #EDDEC4;
             border-color: rgba(169, 105, 40, 0.57);
             border-width: 3px;
             border-style: solid;
             z-index: 1;
-        }
-
-        .rectangle {
-            top: 146px;
-            left: 1139px;
-            width: 380px;
-            height: 442px;
-            background: rgba(169, 105, 40, 0.57);
-            position: absolute;
-            z-index: 0;
-        }
-
-        .image {
-            top: 245px;
-            left: 1012px;
-            width: 309px;
-            height: 416px;
-            border: 6px solid #EDDEC4;
-            background: url('2_5334722403836629016.jpg') lightgray 50% / cover no-repeat;
-            backdrop-filter: blur(2px);
-            position: absolute;
-            z-index: 0;
+            display: flex;
         }
 
         .image-container {
-            top: 20px;
-            left: 1040px;
-            width: 403px;
-            height: 45px;
+            margin-top: 15px;
+            margin-left: 700px;
+            width: 350px;
+            height: 50px;
             display: flex;
-            justify-content: space-between;
-            position: fixed;
             z-index: 2;
         }
 
@@ -63,39 +38,36 @@
             width: auto;
         }
 
+
         .image-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            justify-content: space-between;
         }
+
 
         .link-container {
             height: 58px;
-            top: 30px;
-            justify-content: center;
+            margin-top: 25px;
+            margin-left: 45px;
             color: rgba(12, 11, 11, 0.76);
             font-size: 18px;
             font-weight: 400;
             font-variant: all-small-caps;
-            display: flex;
-            align-items: center;
-            position: fixed;
             z-index: 2;
         }
 
         .acomp {
-            width: 187px;
-            left: 75px;
+            width: 150px;
         }
 
         .assort {
-            width: 178px;
-            left: 300px;
+            width: 100px;
         }
 
-        .contact{
-            width: 166px;
-            left: 475px;
+        .contact {
+            width: 100px;
         }
 
         .link-container a {
@@ -106,17 +78,35 @@
             height: 100%;
         }
 
+        .rectangle {
+            top: 22%;
+            right: 0px;
+            width: 380px;
+            height: 442px;
+            background: rgba(169, 105, 40, 0.57);
+            position: absolute;
+            z-index: 0;
+        }
+
+        .image {
+            margin-top: 90px;
+            margin-left: -115px;
+            width: 309px;
+            height: 416px;
+            border: 6px solid #EDDEC4;
+            background: url('2_5334722403836629016.jpg') lightgray 50% / cover no-repeat;
+            backdrop-filter: blur(2px);
+            z-index: 0;
+        }
+
         .title,
         .maintext {
-            display: flex;
-            flex-direction: column; 
-            justify-content: center; 
-            position: absolute;
+            display: block;
         }
 
         .title {
-            top: 344px;
-            left: 144px;
+            margin-top: 325px;
+            margin-left: 144px;
             width: 507px;
             height: 81px;
             font-size: 34px;
@@ -124,66 +114,66 @@
         }
 
         .maintext {
-            top: 410px;
-            left: 139px;
+            margin-left: 139px;
             width: 621px;
             height: 166px;
             font-size: 20px;
         }
 
-        .usualh{
+        .usualh  {
+            margin-top: 75px;
+            margin-left: 140px;
             font-size: 32px;
             font-variant: all-small-caps;
-            position: absolute;
         }
 
         .content{
+            margin-top: 40px;
+            margin-left: 100px;
             font-size: 18px;
-            position: absolute;
-            transition: top 0.5s ease; 
         }
 
         .lastlink a{
-            top: 1415px; 
-            left: 140px;
-            bottom: 50px;
+            margin-top: 15px;
+            margin-left: 100px;
             text-decoration: none;
-            position: absolute;
             font-size: 30px;
             font-variant: all-small-caps;
             font-weight: 300;
             color: rgba(12, 11, 11, 0.76);
-            display: flex;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@375&family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Калюжна Марія Валеріївна">
+    <lynk rel="stylesheet" href="style.css" />
     <title>Сторінка автору</title>
 </head>
 <body>
-        <div class="background-line"></div>
-        <div class="rectangle"></div>
-        <div class="image"></div>
+    <div class="background-line">
+        <div class="link-container acomp"><a href="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Companycss.html">Алкогольна компанія</a></div>
+        <div class="link-container assort"><a href="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Assortimentcss.html">Асортимент</a></div>
+        <div class="link-container contact"><a href="https://github.com/KaliuzhnaMariia">Контакти</a></div>
+
         <div class="image-container">
             <button><img src="instagram.jpg" alt="Зображення 1"></button>
             <button><img src="twitter.jpg" alt="Зображення 2"></button>
             <button><img src="youtube.jpg" alt="Зображення 3"></button>
             <button><img src="facebook.jpg" alt="Зображення 4"></button>
         </div>
-        <div class="link-container acomp"><a href="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Companycss.html">Алкогольна компанія</a></div>
-        <div class="link-container assort"><a href="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Assortimentcss.html">Асортимент</a></div>
-        <div class="link-container contact"><a href="https://github.com/KaliuzhnaMariia">Контакти</a></div>
-
+    </div>
+    <div class="rectangle">
+        <div class="image"></div>
+    </div>
         <div class="title">Привітання</div>
         <div class="maintext">
             Добрий день, ласкаво прошу на сторінку моєї біографії. Дякую, що зайшли чаас завітати до мене у гості. Тут я розповідаю про себе, 
             свої захоплення, друзів та родину. Сподіваюсь, вам моя сторінка буде до смаку. Приємного читання!
         </div>
 
-        <div class= "usualh" style="top: 750px; left: 140px;">Трохи про себе</div>
-        <div class="content" style="top: 800px; left: 100px; right: 75px;"> 
+        <div class= "usualh">Трохи про себе</div>
+        <div class="content"> 
             <p>
                 Мене звуть Калюжна Марія, і я є унікальною особистістю у цьому світі. Я народилася на третій день Великодня, і з того часу світ
                 навколо мене став моїм полотном для власної подорожі. З молодих років я не виявила зацікавленості до чогось одного. Саме тому я 
@@ -193,8 +183,8 @@
             </p>
         </div>
 
-        <div class= "usualh" style="top: 1000px; left: 140px; ">Мої захоплення</div>
-        <div class="content" style="top: 1050px; left: 100px; right: 75px;"> 
+        <div class= "usualh">Мої захоплення</div>
+        <div class="content"> 
             <p>З моїх захоплень можу виділити декілька головних: </p>
             <ul style="list-style-type:none;">
                 <li>Читання книжок (знайшла себе у класиці, але під настрій можу прочитати будь-який жанр)</li>
@@ -205,8 +195,8 @@
             </ul>
         </div>
 
-        <div class= "usualh" style="top: 1275px; left: 140px; ">Підсумки</div>
-        <div class="content" style="top: 1325px; left: 100px; right: 75px;"> 
+        <div class= "usualh">Підсумки</div>
+        <div class="content"> 
             <p>
                 Дякую за те, що дочитали до кінця. Поспішаю повідомити, що ця сторінка добігає кінця, тому хотілося б залишити трохи нижче посилання на
                 мою сторінку GitHub. Сподіваюся, у вас стане часу туди зазирнути. Гарного дня!
