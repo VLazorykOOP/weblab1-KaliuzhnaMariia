@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <style>
+        #MyHeader{
+            background-color: rgb(74, 12, 12);
+            color: rgba(255, 249, 249, 0.919);
+            text-align:center;
+        }
+
+        body{
+            background-color:  #f8f1e4;
+            color: rgb(66, 60, 60);
+            font-size: 18px;
+            margin: 45px;
+        }
+
+        table td{
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 20px;
+        }
+
+        th, td{
+            line-height: 2;
+            border: 2px solid rgb(74, 12, 12);
+            text-align: center;
+            padding: 10px;
+        }
+
+        td:nth-child(1), td:nth-child(4), td:nth-child(5){
+            width: 1%;
+        }
+
+        td:nth-child(2), td:nth-child(3){
+            width: 5%;
+        }
+
+        td:last-child {
+            width: 1%;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Assortiment"   content="Асортимент продуктів">
+    <title>Асортимент</title>
+</head>
+<body>
+    <h1 id="MyHeader">Творці смаку</h1>
+    <h2>Асортимент</h2>
+    <p>Для замовлення обраного напою, натисніть на кнопку у відповідному стовпці</p>
+
+    <table>
+        <tbody>
+            <tr>
+                <td></td>
+                <td colspan="4">Деталі</td>
+                <td colspan="4" rowspan="3">Виробник</td>
+                <td colspan="8">Продукт</td>
+                <td rowspan="3">Ціна</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Номер</td>
+                <td rowspan="2">Придатність</td>
+                <td rowspan="2">Обмеження</td>
+                <td colspan="2">Наявність</td>
+                <td colspan="4" rowspan="2">Марка</td>
+                <td colspan="4" rowspan="2">Вид</td>
+            </tr>
+            <tr>
+                <td>Так</td>
+                <td>Ні</td>
+            </tr>
+            <tr>
+                <td rowspan="3">1</td>
+                <td>2-5 років</td>
+                <td colspan="3">18+, в наявності</td>
+                <td colspan="4">Україна, Італія</td>
+                <td colspan="8">Вина</td>
+                <td rowspan="3">150-250 грн</td>
+            </tr>
+            <tr>
+                <td>2 роки</td>
+                <td>18+</td>
+                <td colspan="2">Так</td>
+                <td colspan="4">Завод Коктебель, Україна</td>
+                <td colspan="4">KOKTEBEL</td>
+                <td colspan="4">Ігристе вино</td>
+            </tr>
+            <tr>
+                <td>5 років</td>
+                <td>18+</td>
+                <td>Так</td>
+                <td></td>
+                <td colspan="4">Тоsо, Італія</td>
+                <td colspan="4">Fiorelli</td>
+                <td colspan="4">Фраголіно</td>
+            </tr>
+            <tr>
+                <td rowspan="3">2</td>
+                <td>Необмежений</td>
+                <td colspan="3">18+, в наявності 1/2</td>
+                <td colspan="4">Франція, Шотландія</td>
+                <td colspan="8">Міцні напої</td>
+                <td rowspan="3">500-1500 грн</td>
+            </tr>
+            <tr>
+                <td>Необмежений</td>
+                <td>18+</td>
+                <td colspan="2">Так</td>
+                <td colspan="4">Jas Hennessy &amp; Co., Франція</td>
+                <td colspan="4">Hennessy</td>
+                <td colspan="4">Коньяк</td>
+            </tr>
+            <tr>
+                <td>Необмежений</td>
+                <td>18+</td>
+                <td></td>
+                <td>Ні</td>
+                <td colspan="4">Captain Morgan (Diageo), Шотландія</td>
+                <td colspan="4">Somersby</td>
+                <td colspan="4">Ром</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>6 місяців</td>
+                <td>18+</td>
+                <td>Так</td>
+                <td></td>
+                <td colspan="4">Carlsberg Group, Данія</td>
+                <td colspan="4">Somersby</td>
+                <td colspan="4">Сидр</td>
+                <td>67 грн</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>1 рік</td>
+                <td>2+</td>
+                <td>Так</td>
+                <td></td>
+                <td colspan="4">	PepsiCo, Україна</td>
+                <td colspan="4">Садочок</td>
+                <td colspan="4">Сік</td>
+                <td>40 грн</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3>Консультація</h3>
+    <p>
+        Якщо у вас виникли питання щодо алкогольних напоїв, ви сміливо можете звернутися до наших консультантів. Вони з радістю підкажуть вам найкращий напій до вашого
+        смаку, нагоди та вподобань за номером +380(96)-381-41-06. <i style="color:black">Графік роботи наших консультантів: </i>
+    </p>
+    <ul style="list-style-type:none; margin-left: 35px; color: black;">
+        <li><i>Пн-Пт:</i> 9:00 - 19:00</li>
+        <li><i>Сб:</i> 10:00 - 19:00</li>
+        <li><i>Нд:</i> вихідний</li>
+    </ul>
+    <h3>Наявність</h3>
+    <p>
+        Асортимент постійно оновлюється, тому усі алкогольні напої, що знаходяться у списку точно є в наявності. Якщо ви не знайшли бажаних напоїв, можна замовити
+        їх через наших консультантів. Коли ваше замовлення буде готове (найближчим часом) наші консультанти зв'яжуться з вами і повідомлять про це.
+    </p>
+    <h3>Оплата</h3>
+    <ol style="margin-left: 35px; color: black;">
+        <li><i>Попередня оплата</i> (оплачуйте товари на карту ПриватБанк 100% від вартості замовлення)</li>
+        <li><i>Грошовий переказ або оплата при отриманні</i> (ви оплачуєте замовлення  при отриманні у відділенні пошти. Зверніть увагу, відправка грошей назад платна — 
+            вартість доставки  + 2% від суми переказу)</li>
+    </ol>
+    <h3>Доставка</h3>
+    <ol style="margin-left: 35px; color: black;">
+        <li><i>Нова Пошта</i> (в будь-яку точку України за тарифами Нової Пошти)</li>
+        <li><i>Укрпошта</i> (в будь-яку точку України за тарифами Укрпошти)</li>
+    </ol>
+    <h3>Зв'язок з нами</h3>
+    <p>
+        <ol style="margin-left: 35px; color: black;">
+            <li><i>Телефон:</i> Наша гаряча лінія завжди відкрита для вашого дзвінка. Ви можете зв'язатися з нами за номером <em>+380(96)-572-81-02</em> і наші 
+                представники готові надати вам всю необхідну допомогу.
+            </li>
+            <li><i>Електронна пошта:</i> Якщо вам зручніше обмінюватися електронними листами, ви можете написати нам на адресу <em>info@tvortsismaku.com</em>. Ми 
+                відповімо вам якнайшвидше з необхідною інформацією.</li>
+            <li><i>Соціальні мережі:</i> Ми активні в соціальних мережах, таких як Facebook, Instagram і Twitter. Ви можете знайти нас та зв'язатися з нами через ці платформи.</li>
+            <li><i>Фізична адреса:</i> Якщо ви бажаєте особисто завітати до нас або відправити листа, наша фізична адреса <em>м. Київ, вул. Смакова, 123</em> завжди відкрита для вас.</li>
+        </ol> 
+    </p>
+</body>
