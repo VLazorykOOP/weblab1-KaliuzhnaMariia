@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Example</title>
+    <style>
+
+        .svg-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="svg-container">
+    <svg version = "1.1"
+    baseProfile="full"
+    height = "400px" width = "600px" xmlns = "http://www.w3.org/2000/svg"
+    xmlns:xlink = "http://www.w3.org/1999/xlink"
+    xmlns:ev = "http://www.w3.org/2001/xml-events">
+    <rect x="0" y="0" width="600" height="400" fill="none"
+    stroke="black" stroke-width="5px" stroke-opacity="0.5"/>
+
+    <line x1="10" y1="200" x2="580" y2="200"
+    stroke="black" stroke-width="2" />
+
+    <line x1="580" y1="200" x2="570" y2="195"
+    stroke="black" stroke-width="2" />
+
+    <line x1="580" y1="200" x2="570" y2="205"
+    stroke="black" stroke-width="2" />
+    
+    <line x1="200" y1="20" x2="200" y2="390"
+    stroke="black" stroke-width="2" />
+
+    <line x1="200" y1="20" x2="205" y2="25"
+    stroke="black" stroke-width="2" />
+
+    <line x1="200" y1="20" x2="195" y2="25"
+    stroke="black" stroke-width="2" />
+
+    <text>
+        <textPath xlink:href="#curve">Робота з фігурами</textPath>
+    </text>
+    <path id="curve" d="M 100 200 Q 200 50 300 200" fill="transparent" />
+
+    <circle cx="225" cy="175" r="25" fill="blue"
+    stroke="black" stroke-width="1"></circle>
+
+    <circle cx="475" cy="175" r="25" fill="blue"
+    stroke="black" stroke-width="1"></circle>
+
+    <rect x="200" y="100" width="50" height="50" fill="blue" 
+    stroke="black" stroke-width="1"></rect>
+
+    <rect x="250" y="250" width="50" height="50" fill="blue" 
+    stroke="black" stroke-width="1">
+    <animate attributeName="x" values="250;200;250" dur="3s" repeatCount="indefinite" />
+    </rect>
+
+    <rect x="300" y="50" width="100" height="50" fill="blue" 
+    stroke="black" stroke-width="1">
+    <animate attributeName="width" values="100;150;100" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="height" values="50;100;50" dur="3s" repeatCount="indefinite" />
+    </rect>
+
+    <rect x="400" y="250" width="50" height="50" fill="blue" 
+    stroke="black" stroke-width="1">
+    <animate attributeName="x" values="400;450;400" dur="3s" repeatCount="indefinite"/> 
+    </rect>
+
+    <rect x="450" y="100" width="50" height="50" fill="blue" 
+    stroke="black" stroke-width="1">
+    <animateTransform attributeName="transform" type="skewX" values="0;25;0" dur="3s" repeatCount="indefinite" />
+    </rect>
+    
+    <polygon points="225,200 200,250 250,250" fill="blue" 
+    stroke="black" stroke-width="1" >
+    <animateTransform attributeName="transform" type="rotate" from="0 225 200" to="360 225 200" dur="3s" repeatCount="indefinite" />
+    </polygon>
+
+    <polygon points="475,200 450,250 500,250" fill="blue" 
+    stroke="black" stroke-width="1"></polygon>
+
+    <ellipse cx="350" cy="200" rx="50" ry="100" fill="blue" 
+    stroke="black" stroke-width="1">
+    <animate attributeName="fill" values="green;orange;purple" dur="3s" repeatCount="indefinite"></animate>
+    </ellipse>
+    
+    </svg>
+</div>
+</body>
+</html>
