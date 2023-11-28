@@ -2,6 +2,10 @@ function message(){
     alert("Увесь вміст сторінки завантажено!");
 }
 
+function resize(){
+    alert("Розмір вікна змінився!");
+}
+
 function doubleClick(){
     var heading = document.querySelector("h3");
     heading.style.color = "pink";
