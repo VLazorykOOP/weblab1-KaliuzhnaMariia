@@ -38,7 +38,7 @@
         .link-container {
             height: 58px;
             margin-top: -35px;
-            margin-left: 70%;
+            margin-left: 65%;
             color: #f8f1e4;
             font-size: 25px;
             font-weight: 400;
@@ -89,7 +89,7 @@
             background-color: rgb(74, 12, 12);
             color: #fff;
             padding: 10px 15px;
-            margin-top: 10px;
+            margin-top: 5px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
@@ -102,13 +102,38 @@
             font-size: 13px;
         }
 
+        h3 {
+            cursor: pointer;
+        }
+
+        .mouse{
+            background-color: rgb(74, 12, 12);
+            color:#f8f1e4;
+            width: 120px;
+            height: 20px;
+            padding: 45px;
+            text-align: center;
+        }
+
+        .rezTextarea{
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+
+        .infoTextarea{
+            width: 550px;
+            height: 50px;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
     </style>
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@375&family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="Form" content="Калюжна Марія Валеріївна">
 </head>
-<body>
+<body onload="message()">
     <div class="background-line">
         <div class="mainname">Творці смаку</div>
         <div class="link-container">
@@ -121,7 +146,7 @@
 
     <div class="container">
         <h2>Замовлення товару</h2>
-        <form action="/process-order" method="post">
+        <form id="orderForm" action="/process-order" method="post">
             <label for="first-name">Ім'я:</label>
             <input type="text" id="first-name" name="first-name" required>
 
@@ -135,7 +160,7 @@
             <input type="date" id="birth" name="birth" required>
 
             <label for="address">Адреса доставки:</label>
-            <input type="text" name="address" required></textarea>
+            <input type="text" name="address" required>
 
             <label for="payment">Спосіб оплати:</label>
             <select id="payment" name="payment" required>
@@ -154,7 +179,20 @@
             </select>
         </form>
         
-        <button type="submit">Замовити</button>
+        <button type="button">Замовити</button>
+    </div>
+
+    <div class="container">
+        <script src="js\lab7.js"></script>
+        <h3 ondblclick="doubleClick()">Для подвійного натискання</h3>
+        <h4 div class="mouse" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Наведіть курсор!</div>
+    </div>
+    <div class="container">
+        <button type="button" onclick="displayTextarea(document.getElementById('orderForm').elements)">Run Task</button>
+        <textarea class="rezTextarea" id="resultTextarea" rows="8" cols="40" readonly></textarea>
+        <input class="infoTextarea" type="text" id="textInput" placeholder="Введіть текст">
+        <button onclick="searchInformation()">Пошук інформації</button>
+        <p id="result"></p>
     </div>
 </body>
 </html>
