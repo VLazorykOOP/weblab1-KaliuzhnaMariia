@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Example</title>
+    <script>
+        var canvas, context;
+        window.onload = function() {
+        canvas = document.getElementById("drawingCanvas");
+        context = canvas.getContext("2d");
+        canvas.addEventListener("mousedown", doMouseDown, false);
+        
+        var xe,ye,xc,yc,xm,ym, koef;
+        xm = canvas.width; 
+        xc = xm/2;
+        ym = canvas.height; 
+        yc =ym/2;
+        koef =50;
+        context.lineWidth = 2;
+        context.moveTo(10,yc);
+        context.lineTo(xm-10,yc);
+        context.lineTo(xm-15,yc-5);
+        context.moveTo(xm-10,yc);
+        context.lineTo(xm-15,yc+5);
+        context.stroke();
+        context.moveTo(xc,ym-10);
+        context.lineTo(xc,10);
+        context.lineTo(xc-5,15);
+        context.moveTo(xc,10);
+        context.lineTo(xc+5,15);
+        context.stroke();
+        nx = xc / koef ;
+        ny = yc / koef;
+        for (i=0; i<nx;i++ )
+        {
+            xe = xc + i*koef;
+            ye = yc + 5;
+            context.moveTo(xe,ye);
+            context.lineTo(xe,ye-10);
+            xe = xc - i*koef;
+            context.moveTo(xe,ye);
+            context.lineTo(xe,ye-10);
+        }
+        context.stroke();
+        for (i=0; i<ny;i++ )
+        {
+            xe = xc + 5;
+            ye = yc + i*koef;
+            context.moveTo(xe,ye);
+            context.lineTo(xe-10,ye);
+            ye = yc - i*koef;
+            context.moveTo(xe,ye);
+            context.lineTo(xe-10,ye);
+        }
+        context.closePath();
+        context.stroke();
+// Код для рисування
+        context.beginPath()
+        xe = xc + 2 * koef;
+        ye = yc - 1 * koef;
+        context.moveTo(xe,ye);
+        context.lineTo(xe + 2 * koef,ye);
+        context.lineTo(xe + 1 * koef,ye - 1 * koef);
+        context.closePath();
+        
+// Заливка
+    context.fillStyle = "#ff00ff";
+    context.fill();
+// Контур
+context.lineWidth = 3;
+context.strokeStyle = "green";
+context.stroke();
+xe = xc + 2 * koef;
+ye = yc + 2 * koef;
+context.save();
+context.beginPath()
+context.translate(xe,ye);
+context.rotate( Math.PI / 3 );
+context.moveTo(0,0);
+context.lineTo(0 + 2 * koef,0);
+context.lineTo(0 + 1 * koef,0 - 1 * koef);
+context.closePath();
+context.fillStyle = "#ffff00";
+context.fill();
+context.stroke();
+context.restore();
+context.beginPath()
+xe = xc - 3 * koef;
+ye = yc - 2 * koef;
+context.arc(xe, ye, 1 * koef, 0, 2*Math.PI);
+context.fill();3
+context.closePath();
+context.stroke();
+xe = xc - 3 * koef;
+ye = yc - 3 * koef;
+context.save();
+context.beginPath();
+context.translate(xe,ye);
+context.rotate( Math.PI / 5 );
+context.rect(0, 0, 3 * koef, 1 * koef);
+context.fillStyle = "rgba(255,255,0,0.5)";
+context.fill();
+context.stroke();
+context.restore();
+//canvas.onmouseup = stopDrawing;
+}
+function Add_Figure_Draw()
+{
+canvas = document.getElementById("drawingCanvas");
+context = canvas.getContext("2d");
+xc = 200; yc=200; koef =50;
+xe = xc + 3 * koef;
+ye = yc - 2 * koef;
+context.beginPath();
+context.lineWidth = 2;
+context.moveTo(xe,ye);
+context.lineTo(xe + koef ,ye+koef);
+context.lineTo(xe,ye+ 2* koef);
+context.lineTo(xe - koef ,ye+koef);
+context.closePath();
+context.fillStyle = "rgba(255,0,0,0.3)";
+context.strokeStyle = "orange";
+context.fill();
+context.stroke();
+}
+function doMouseDown(event) //stopDrawing()
+{
+var xe = event.clientX - canvas.offsetLeft; //
+var ye = event.clientY - canvas.offsetTop; //
+/*
+var xe = event.screenX; //
+var ye = event.screenY; //
+*/
+koef =50;
+context.beginPath();
+context.lineWidth = 2;
+context.moveTo(xe,ye);
+context.lineTo(xe + koef ,ye+koef);
+context.lineTo(xe,ye+ 2* koef);
+context.lineTo(xe - koef ,ye+koef);
+context.closePath();
+var my_gradient = context.createLinearGradient(xe - koef,ye, xe + koef,
+ye);
+my_gradient.addColorStop(0, "yellow");
+my_gradient.addColorStop(1, "blue");
+context.fillStyle = my_gradient; // "rgba(255,0,0,0.3)";
+context.strokeStyle = "orange";
+context.fill();
+context.stroke();
+}
+        
+
+    </script>
+    <style>
+        canvas { 
+            border: 2px solid rgb(74, 12, 12);
+        }
+        body {
+            background-color : rgba(255, 249, 249, 0.919);
+        }
+
+    </style>
+</head>
+<body>
+    <canvas id="drawingCanvas" width="800" height="500">
+        Браузер не підтримує тег canvas
+        </canvas>
+        <h3 OnClick = "Add_Figure_Draw()"> Додати фігуру </h3>
+</body>
+</html>

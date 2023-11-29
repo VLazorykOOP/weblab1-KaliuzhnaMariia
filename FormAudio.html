@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма покупця</title>
+    <style>
+    body {
+            background-color: #f8f1e4;
+            margin: 0;
+            padding: 0;
+            font-family: Montserrat, sans-serif;
+            color: rgb(66, 60, 60);
+            font-size: 18px;
+            background-image: url('C:/Users/User/github-classroom/VLazorykOOP/weblab1-KaliuzhnaMariia/background.jpg');
+        }
+
+        div.background-line {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 85px;
+            background-color: rgb(74, 12, 12);
+            z-index: 1;
+        }
+
+        .mainname{
+            margin-top: 25px;
+            margin-left: 75px;
+            font-size: 40px;
+            font-variant: all-small-caps;
+            color: #f8f1e4;
+            z-index: 2;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .link-container {
+            height: 58px;
+            margin-top: -35px;
+            margin-left: 70%;
+            color: #f8f1e4;
+            font-size: 25px;
+            font-weight: 400;
+            font-variant: all-small-caps;
+            font-family: 'Roboto Condensed', sans-serif;
+            z-index: 2;
+        }
+
+        .link-container a {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-decoration: none;
+            color: inherit;
+            height: 58px;
+            width: 30%;
+            margin-right: 40px;
+        }
+
+        .title {
+            margin-top: 125px;
+            margin-left: 475px;
+            font-size: 35px;
+            font-variant: all-small-caps;
+            color: rgb(0, 0, 0);
+        }
+
+        .container-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-left, .container-right {
+            padding: 20px;
+            border-radius: 8px;
+            margin-left: 20px;
+            margin-top: 10px;
+            height: 100%;
+            margin-right: 20px;
+            border: 3px solid rgb(74, 12, 12);
+        }
+
+        .container-right{
+            background-color: #fff;
+            width: 50%;
+        }
+
+        .container-left{
+            width: 25%;
+        }
+        
+        button {
+            background-color: rgb(74, 12, 12);
+            color: #fff;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    </style>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@375&family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="Form" content="Калюжна Марія Валеріївна">
+</head>
+<body>
+    <div class="background-line">
+        <div class="mainname">Творці смаку</div>
+        <div class="link-container">
+            <a href="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Authorcss.html">Автор</a>
+            <a href="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Companycss.html">Алкогольна компанія</a>
+            <a href="https://github.com/KaliuzhnaMariia">Контакти</a>
+        </div>
+    </div>
+    <div class= "title"><i>Розкрийте насолоду в кожній ноті</i></div>
+
+    <div class="container-flex">
+    <div class="container-left">
+        <h4>Класична музика: </h4>
+        <p>Fly - Ludovico Einaudi</p>
+        <audio controls>
+            <source src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Ludovico Einaudi - Fly.mp3" type="audio/mpeg">
+            Браузер не підтримує музичний елемент
+            <track kind="subtitles">
+        </audio>
+
+        <h4>Альтернативна музика: </h4>
+        <p>Californication - Red Hot Chili Peppers</p>
+        <audio controls>
+            <source src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Red Hot Chili Peppers - Californication.mp3" type="audio/mpeg">
+            Браузер не підтримує музичний елемент
+        </audio>
+
+        <h4>Поп: </h4>
+        <p>Eastside - benny blanco, Halsey & Khalid</p>
+        <audio controls>
+            <source src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\benny-blanco-x-halsey-khalid-eastside.mp3" type="audio/mpeg">
+            Браузер не підтримує музичний елемент
+        </audio>
+
+        <h4>Госпел: </h4>
+        <p>Work song - Hozier</p>
+        <audio controls>
+            <source src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\hozier_-_work_song.mp3" type="audio/mpeg">
+            Браузер не підтримує музичний елемент
+        </audio>
+
+        <h4>Хіп-хоп: </h4>
+        <p>More - j-hope</p>
+        <audio controls>
+            <source src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\j-hope_-_more.mp3" type="audio/mpeg">
+            Браузер не підтримує музичний елемент
+        </audio>
+
+        <h4>Рок: </h4>
+        <p>Bones - Imagine Dragons</p>
+        <audio controls>
+            <source src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\imagine_dragons_-_bones.mp3" type="audio/mpeg">
+            Браузер не підтримує музичний елемент
+        </audio>
+        
+    </div>
+    <div class="container-right">
+        <p>Formidable - Stromae</p>
+        <video controls width=100%>
+            <source src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Stromae - Formidable.mp4" type="video/mp4">
+            Браузер не підтримує відео елемент
+        </video>
+
+        <p>HEAVEN AND BACK - Chase Atlantic</p>
+        <video controls width=100%>
+            <source src="C:\Users\User\github-classroom\VLazorykOOP\weblab1-KaliuzhnaMariia\Chase Atlantic - HEAVEN AND BACK.mp4" type="video/mp4">
+            Браузер не підтримує відео елемент
+        </video>
+    </div>
+</div>
+</body>
+</html>
